@@ -1,0 +1,21 @@
+/*Simple reset*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  /*You can use any kind of background here.*/
+  background: #6b92b9;
+  postion: realative; }
+
+canvas {
+  display: block; }
+
+.ontop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 25px;
+  text-align: center; }
+  .ontop h1 {
+    font-size: 45px; }
