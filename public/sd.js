@@ -10,7 +10,7 @@ window.onload = function(){
    snow.height = H;
 
    //snowflake particles
-   var mp = 25; //max particles
+   var mp = 95; //max particles
    var particles = [];
    for(var i = 0; i < mp; i++)
    {
@@ -22,12 +22,15 @@ window.onload = function(){
       })
    }
 
+   var background = new Image();
+   background.src = 'assets/icons/html5-org.svg'
+
    //Lets draw the flakes
    function draw()
    {
       ctx.clearRect(0, 0, W, H);
-
-      ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+      ctx.drawImage(background, 0,0);
+      //ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
       ctx.beginPath();
       for(var i = 0; i < mp; i++)
       {
