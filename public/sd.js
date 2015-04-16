@@ -31,15 +31,15 @@ window.onload = function(){
    {
       ctx.clearRect(0, 0, W, H);
       //ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-      ctx.beginPath();
+      //ctx.beginPath();
       for(var i = 0; i < mp; i++)
       {
          var p = particles[i];
          ctx.drawImage(background, p.x , p.y, 75, 50);
-         ctx.moveTo(p.x, p.y);
+         //ctx.moveTo(p.x, p.y);
          ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
       }
-      ctx.fill();
+     //  ctx.fill();
       update();
    }
 
