@@ -10,7 +10,7 @@ window.onload = function(){
    snow.height = H;
 
    //snowflake particles
-   var mp = 25; //max particles
+   var mp = 5; //max particles
    var particles = [];
    for(var i = 0; i < mp; i++)
    {
@@ -35,9 +35,9 @@ window.onload = function(){
       for(var i = 0; i < mp; i++)
       {
          var p = particles[i];
+         ctx.drawImage(background, p.x , p.y);
          ctx.moveTo(p.x, p.y);
          ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
-         ctx.drawImage(background, p.x , p.y);
       }
       ctx.fill();
       update();
