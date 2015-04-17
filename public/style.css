@@ -19,3 +19,22 @@ canvas {
   text-align: center; }
   .ontop h1 {
     font-size: 45px; }
+
+nav {
+  display: block;
+  float: left;
+  width: 100%;
+  background: #ff00ff; }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px; }
+  nav a.logo {
+    display: block;
+    float: left;
+    font-size: 51px; }
+  nav a.port {
+    display: block;
+    float: right;
+    padding-top: 20px;
+    font-size: 34px; }

@@ -19,3 +19,25 @@ canvas {
     font-size: 45px;
   }
 }
+nav {
+  display: block;
+  float: left;
+  width: 100%;
+  background: #ff00ff;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    }
+  a.logo {
+    display: block;
+    float: left;
+    font-size: 51px;
+  }
+  a.port {
+    display: block;
+    float: right;
+    padding-top: 20px;
+    font-size: 34px;
+  }
+}
