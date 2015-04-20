@@ -1,0 +1,13 @@
+.main-grid {
+  display: block;
+  float: left;
+  width: 100%;
+  section {
+    display: block;
+    float: left;
+    width: 33%;
+    img {
+      width: 100%;
+    }
+  }
+}

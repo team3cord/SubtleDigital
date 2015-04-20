@@ -38,3 +38,14 @@ nav {
     float: right;
     padding-top: 20px;
     font-size: 34px; }
+
+.main-grid {
+  display: block;
+  float: left;
+  width: 100%; }
+  .main-grid section {
+    display: block;
+    float: left;
+    width: 33%; }
+    .main-grid section img {
+      width: 100%; }
