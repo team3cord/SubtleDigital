@@ -8,6 +8,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <link rel="stylesheet" href="style.css">
+   <!-- bower:js -->
+   <!-- endbower -->
 </head>
 <body ng-app="SubDig">
 <!--[if lt IE 8]>
@@ -23,60 +25,74 @@
 
    </header>
 <div ng-controller="AppCtrl" class="main-grid">
+   <masonry column-width="400">
    <h1>{{ testing }}</h1>
-   <section>
-      <img src="assets/imgs/fullpixel.png">
-      <h3>FullPixel</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/tofurky.png">
-      <h3>Tofurky</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/juniperfund.png">
-      <h3>The Juniper FUnd</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/intelliskin.png">
-      <h3>Intelliskin</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/wellpartner.png">
-      <h3>Wellpartner</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/wafed.png">
-      <h3>Wanshington Federal</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/skylakesc.png">
-      <h3>Sky Lakes</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/nedc.png">
-      <h3>New England Design & Construction</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/orbreakers.png">
-      <h3>Oregon Breakers</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/svelte.png">
-      <h3>CalNaturale Svelte</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/earthwise.png">
-      <h3>Earthwise Salvage</h3>
-   </section>
-   <section>
-      <img src="assets/imgs/windingwaters.png">
-      <h3>Winding Waters Rafting</h3>
-   </section>
+      <section masonry-brick>
+         <img src="assets/imgs/fullpixel.png">
+         <h3>FullPixel</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/tofurky.png">
+         <h3>Tofurky</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/juniperfund.png">
+         <h3>The Juniper FUnd</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/intelliskin.png">
+         <h3>Intelliskin</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/wellpartner.png">
+         <h3>Wellpartner</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/wafed.png">
+         <h3>Wanshington Federal</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/skylakesc.png">
+         <h3>Sky Lakes</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/nedc.png">
+         <h3>New England Design & Construction</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/orbreakers.png">
+         <h3>Oregon Breakers</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/svelte.png">
+         <h3>CalNaturale Svelte</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/earthwise.png">
+         <h3>Earthwise Salvage</h3>
+      </section>
+      <section masonry-brick>
+         <img src="assets/imgs/windingwaters.png">
+         <h3>Winding Waters Rafting</h3>
+      </section>
+   </masonry>
 </div>
-<script>window.jQuery || document.write('<script src="js/lib/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="bower.js"></script>
-<script src="app.js"></script>
 
+<script src="js/lib/jquery/dist/jquery.js"></script>
+<script src="js/lib/get-style-property/get-style-property.js"></script>
+<script src="js/lib/get-size/get-size.js"></script>
+<script src="js/lib/eventEmitter/EventEmitter.js"></script>
+<script src="js/lib/eventie/eventie.js"></script>
+<script src="js/lib/doc-ready/doc-ready.js"></script>
+<script src="js/lib/matches-selector/matches-selector.js"></script>
+<script src="js/lib/outlayer/item.js"></script>
+<script src="js/lib/outlayer/outlayer.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
+<script src="js/lib/imagesloaded/imagesloaded.js"></script>
+<script src="js/lib/angular/angular.js"></script>
+<script src="js/lib/angular-masonry/angular-masonry.js"></script>
+<script src="js/lib/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>

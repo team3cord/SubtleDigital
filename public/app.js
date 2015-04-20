@@ -1,6 +1,7 @@
 angular
    .module('SubDig', [
       'ngRoute',
+      'wu.masonry'
    ]);
 angular
    .module('SubDig')
@@ -13,7 +14,7 @@ angular
    .module('SubDig')
    .config(["$routeProvider", function($routeProvider){
       $routeProvider
-         .when('/portfolio.html')
+         .when('/portfolio.html', {controller: 'AppCtr', templateUrl: '/partials/grid.html'});
    }]);
 
 

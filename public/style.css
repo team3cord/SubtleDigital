@@ -43,9 +43,9 @@ nav {
   display: block;
   float: left;
   width: 100%; }
-  .main-grid section {
-    display: block;
-    float: left;
-    width: 33%; }
-    .main-grid section img {
-      width: 100%; }
+  .main-grid h1 {
+    font-size: 23px;
+    color: #FFFFFF;
+    text-align: center; }
+  .main-grid img {
+    width: 100%; }

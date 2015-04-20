@@ -2,12 +2,13 @@ var gulp           = require('gulp'),
    concat         = require('gulp-concat'),
    uglify         = require('gulp-uglify'),
    ngAnnotate     = require('gulp-ng-annotate'),
-   nodemon        = require('gulp-nodemon'),
+// nodemon        = require('gulp-nodemon'),
    sass           = require('gulp-sass'),
    notify         = require('gulp-notify'),
    bower          = require('gulp-bower'),
-   livereload     = require('gulp-livereload'),
-   mainBowerFiles = require('main-bower-files');
+   livereload     = require('gulp-livereload');
+// mainBowerFiles = require('main-bower-files'),
+// wiredep        = require('wiredep').streams;
 
 var config = {
    sassPath: 'public/stylesheets/*.scss',
@@ -26,11 +27,13 @@ gulp.task('js', function(){
 gulp.task('watch:js', ['js'], function(){
    gulp.watch(config.jsPath, ['js']);
 });
-gulp.task('bower', function(){
-   gulp.src(mainBowerFiles(),{base: config.bowerPath})
-      .pipe(concat('bower.js'))
-      .pipe(gulp.dest('public'));
-});
+// gulp.task('bower', function(){
+//   gulp.src(mainBowerFiles(),{base: config.bowerPath})
+//      .pipe(wiredep({
+//      })
+//.pipe(concat('bower.js'))
+//      .pipe(gulp.dest('public'));
+//});
 gulp.task('css', function(){
    gulp.src(config.sassPath)
       .pipe(sass())
@@ -43,6 +46,6 @@ gulp.task('watch:css',['css'], function(){
    gulp.watch(config.sassPath,['css']);
 });
 
-gulp.task('default',['bower','watch:js', 'watch:css'],  function(){
+gulp.task('default',['watch:js', 'watch:css'],  function(){
 });
 
