@@ -9,7 +9,7 @@
 
    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-app="SubDig">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -22,7 +22,8 @@
       </nav>
 
    </header>
-<div class="main-grid">
+<div ng-controller="AppCtrl" class="main-grid">
+   <h1>{{ testing }}</h1>
    <section>
       <img src="assets/imgs/fullpixel.png">
       <h3>FullPixel</h3>
@@ -73,6 +74,7 @@
    </section>
 </div>
 <script>window.jQuery || document.write('<script src="js/lib/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="bower.js"></script>
 <script src="app.js"></script>
 
 
