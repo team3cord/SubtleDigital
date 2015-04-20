@@ -9,6 +9,11 @@ angular
 }]);
 
 
-
+angular
+   .module('SubDig')
+   .config(["$routeProvider", function($routeProvider){
+      $routeProvider
+         .when('/portfolio.html')
+   }]);
 
 
