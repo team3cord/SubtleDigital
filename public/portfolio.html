@@ -24,58 +24,14 @@
       </nav>
 
    </header>
-<div ng-controller="AppCtrl" class="main-grid">
-   <masonry column-width="400">
-   <h1>{{ testing }}</h1>
-      <section class="masonry-brick" ng-repeat="project in projects">
+<div ng-controller="AppCtrl as main" class="main-grid">
+   <masonry class="mason">
+   <h1>{{ main.testing }}</h1>
+      <section class="masonry-brick" ng-repeat="project in main.projects">
          <img src="assets/imgs/{{project.src}}">
          <h3>{{project.title}}</h3>
          <p>{{project.desc}}</p>
       </section>
-    <!--  <section masonry-brick>
-         <img src="assets/imgs/tofurky.png">
-         <h3>Tofurky</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/juniperfund.png">
-         <h3>The Juniper FUnd</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/intelliskin.png">
-         <h3>Intelliskin</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/wellpartner.png">
-         <h3>Wellpartner</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/wafed.png">
-         <h3>Wanshington Federal</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/skylakesc.png">
-         <h3>Sky Lakes</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/nedc.png">
-         <h3>New England Design & Construction</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/orbreakers.png">
-         <h3>Oregon Breakers</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/svelte.png">
-         <h3>CalNaturale Svelte</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/earthwise.png">
-         <h3>Earthwise Salvage</h3>
-      </section>
-      <section masonry-brick>
-         <img src="assets/imgs/windingwaters.png">
-         <h3>Winding Waters Rafting</h3>
-      </section> -->
    </masonry>
 </div>
 
