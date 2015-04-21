@@ -27,11 +27,12 @@
 <div ng-controller="AppCtrl" class="main-grid">
    <masonry column-width="400">
    <h1>{{ testing }}</h1>
-      <section masonry-brick>
-         <img src="assets/imgs/fullpixel.png">
-         <h3>FullPixel</h3>
+      <section class="masonry-brick" ng-repeat="project in projects">
+         <img src="assets/imgs/{{project.src}}">
+         <h3>{{project.title}}</h3>
+         <p>{{project.desc}}</p>
       </section>
-      <section masonry-brick>
+    <!--  <section masonry-brick>
          <img src="assets/imgs/tofurky.png">
          <h3>Tofurky</h3>
       </section>
@@ -74,7 +75,7 @@
       <section masonry-brick>
          <img src="assets/imgs/windingwaters.png">
          <h3>Winding Waters Rafting</h3>
-      </section>
+      </section> -->
    </masonry>
 </div>
 
@@ -90,6 +91,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
 <script src="js/lib/imagesloaded/imagesloaded.js"></script>
 <script src="js/lib/angular/angular.js"></script>
+<script src="js/lib/angular-resource/angular-resource.js"></script>
 <script src="js/lib/angular-masonry/angular-masonry.js"></script>
 <script src="js/lib/angular-route/angular-route.js"></script>
 <script src="app.js"></script>
