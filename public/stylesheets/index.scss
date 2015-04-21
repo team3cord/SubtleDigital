@@ -1,16 +1,64 @@
 /*Simple reset*/
 *{margin: 0; padding: 0;}
+/*********************************/
+/* FONTS */
+@font-face {
+  font-family: 'hyperdigital_outlineregular';
+  src: url('assets/fonts/hyperdigital-outline-webfont.eot');
+  src: url('assets/fonts/hyperdigital-outline-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/hyperdigital-outline-webfont.woff2') format('woff2'),
+  url('assets/fonts/hyperdigital-outline-webfont.woff') format('woff'),
+  url('assets/fonts/hyperdigital-outline-webfont.ttf') format('truetype'),
+  url('assets/fonts/hyperdigital-outline-webfont.svg#hyperdigital_outlineregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'hyperdigital_shadowregular';
+  src: url('assets/fonts/hyperdigital-shadow-webfont.eot');
+  src: url('assets/fonts/hyperdigital-shadow-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/hyperdigital-shadow-webfont.woff2') format('woff2'),
+  url('assets/fonts/hyperdigital-shadow-webfont.woff') format('woff'),
+  url('assets/fonts/hyperdigital-shadow-webfont.ttf') format('truetype'),
+  url('assets/fonts/hyperdigital-shadow-webfont.svg#hyperdigital_shadowregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'hyperdigitalregular';
+  src: url('assets/fonts/hyperdigital-webfont.eot');
+  src: url('assets/fonts/hyperdigital-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/hyperdigital-webfont.woff2') format('woff2'),
+  url('assets/fonts/hyperdigital-webfont.woff') format('woff'),
+  url('assets/fonts/hyperdigital-webfont.ttf') format('truetype'),
+  url('assets/fonts/hyperdigital-webfont.svg#hyperdigitalregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*********************************/
 
 body {
   /*You can use any kind of background here.*/
-  background: #6b92b9;
+  background: #121c26;
   postion: realative;
 }
 canvas {
   display: block;
   margin-top: 3%;
   margin-left: 7.6%;
-  background-color: #0000CD;
+  background-color: #6b92b9;
 }
 .ontop {
   position: absolute;
@@ -22,21 +70,23 @@ canvas {
   }
 }
 nav {
-  display: none;
   position: absolute;
-  top: 25px;
+  top: 25%;
   width: 100%;
-  background: #ff00ff;
+  height: 150px;
   z-index: 2;
   a {
-    color: #ffffff;
+    color: #32CD32;
     text-decoration: none;
     padding: 10px;
     }
   a.logo {
     display: block;
-    float: left;
-    font-size: 51px;
+    font-size: 233px;
+    font-family: 'hyperdigital_outlineregular';
+  }
+  .dig {
+    font-family: 'hyperdigitalregular';
   }
   a.port {
     display: block;
