@@ -4,16 +4,6 @@ angular
       'ngResource',
       'wu.masonry'
    ]);
-
-
-
-angular
-   .module('SubDig')
-      .factory('ProjectFct',
-         ["$resource", function($resource){
-            return $resource('/app/data/projects.json');
-   }]);
-
 angular
    .module('SubDig')
    .controller('AppCtrl', ['$scope', function(){
@@ -89,4 +79,13 @@ angular
    .config(["$routeProvider", function($routeProvider){
       $routeProvider
          .when('/portfolio.html', {controller: 'AppCtr', templateUrl: '/partials/grid.html'});
+   }]);
+
+
+
+angular
+   .module('SubDig')
+      .factory('ProjectFct',
+         ["$resource", function($resource){
+            return $resource('/app/data/projects.json');
    }]);

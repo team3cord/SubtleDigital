@@ -23,10 +23,18 @@
          <a class="logo" href="/">Subtle Digital</a>
          <a class="port" href="/portfolio.html">Portfolio</a>
       </nav>
-      <div class="page"><p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></div>
    </header>
+   <img  class="mac" src="assets/imgs/bg-laptop-overlay.png">
 </div>
 <script>window.jQuery || document.write('<script src="js/lib/jquery/dist/jquery.min.js"><\/script>')</script>
+<script>
+   var winWidth = jQuery(window).width(),
+       winHeight = jQuery(window).height();
+   jQuery('.mac').width(winWidth).height(winHeight);
+
+   console.log(winWidth);
+   console.log(winHeight);
+</script>
 <script src="sd.js"></script>
 
 

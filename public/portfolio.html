@@ -25,8 +25,8 @@
 
    </header>
 <div ng-controller="AppCtrl as main" class="main-grid">
-   <masonry class="mason">
    <h1>{{ main.testing }}</h1>
+   <masonry class="mason">
       <section class="masonry-brick" ng-repeat="project in main.projects">
          <img src="assets/imgs/{{project.src}}">
          <h3>{{project.title}}</h3>

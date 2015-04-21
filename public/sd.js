@@ -4,8 +4,8 @@ window.onload = function(){
    var ctx = snow.getContext("2d");
 
    //snow dimensions
-   var W = window.innerWidth;
-   var H = window.innerHeight;
+   var W = window.innerWidth - (window.innerWidth * .15);
+   var H = window.innerHeight - (window.innerHeight * .10);
    snow.width = W;
    snow.height = H;
 
@@ -35,7 +35,7 @@ window.onload = function(){
       for(var i = 0; i < mp; i++)
       {
          var p = particles[i];
-         ctx.drawImage(background, p.x , p.y, 75, 50);
+         ctx.drawImage(background, p.x , p.y, 56, 31);
          //ctx.moveTo(p.x, p.y);
          ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
       }

@@ -9,22 +9,26 @@ body {
   postion: realative; }
 
 canvas {
-  display: block; }
+  display: block;
+  margin-top: 3%;
+  margin-left: 7.6%;
+  background-color: #0000CD; }
 
 .ontop {
   position: absolute;
   top: 0;
   width: 100%;
-  padding-top: 25px;
   text-align: center; }
   .ontop h1 {
     font-size: 45px; }
 
 nav {
-  display: block;
-  float: left;
+  display: none;
+  position: absolute;
+  top: 25px;
   width: 100%;
-  background: #ff00ff; }
+  background: #ff00ff;
+  z-index: 2; }
   nav a {
     color: #ffffff;
     text-decoration: none;
@@ -39,6 +43,11 @@ nav {
     padding-top: 20px;
     font-size: 34px; }
 
+.mac {
+  display: block;
+  float: left;
+  z-index: 1; }
+
 .main-grid {
   display: block;
   float: left;
@@ -50,11 +59,17 @@ nav {
   .main-grid .mason {
     display: block;
     float: left;
-    width: 100%;
-    background-color: #00ff00; }
-  .main-grid section {
-    width: 33%; }
-  .main-grid img {
-    display: block;
-    float: left;
     width: 100%; }
+  .main-grid section {
+    width: 32%;
+    margin: .65%; }
+    .main-grid section img {
+      display: block;
+      float: left;
+      width: 100%;
+      margin-bottom: 20px; }
+    .main-grid section h3 {
+      margin-top: 20px;
+      font-size: 23px;
+      text-align: center;
+      color: #FFFFFF; }

@@ -8,22 +8,26 @@ body {
 }
 canvas {
   display: block;
+  margin-top: 3%;
+  margin-left: 7.6%;
+  background-color: #0000CD;
 }
 .ontop {
   position: absolute;
   top: 0;
   width: 100%;
-  padding-top: 25px;
   text-align: center;
   h1 {
     font-size: 45px;
   }
 }
 nav {
-  display: block;
-  float: left;
+  display: none;
+  position: absolute;
+  top: 25px;
   width: 100%;
   background: #ff00ff;
+  z-index: 2;
   a {
     color: #ffffff;
     text-decoration: none;
@@ -40,4 +44,9 @@ nav {
     padding-top: 20px;
     font-size: 34px;
   }
+}
+.mac {
+  display: block;
+  float: left;
+  z-index: 1;
 }
