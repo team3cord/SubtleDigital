@@ -20,11 +20,12 @@
 <!-- Add your site or application content here -->
    <header>
       <nav class="port-nav">
-         <a class="logo" href="/">Subtle Digital</a>
+         <a class="logo" href="#">Subtle <span class="dig">Digital</span></a>
       </nav>
 
    </header>
 <div ng-controller="AppCtrl as main" class="main-grid">
+   <div class="ang-view" ng-view></div>
    <masonry class="mason">
       <section class="masonry-brick" ng-repeat="project in main.projects">
          <img src="assets/imgs/{{project.src}}">
