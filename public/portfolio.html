@@ -20,7 +20,7 @@
 <!-- Add your site or application content here -->
    <header>
       <nav class="port-nav">
-         <a class="logo" href="#">Subtle <span class="dig">Digital</span></a>
+         <a class="logo" href="/">Subtle <span class="dig">Digital</span></a>
       </nav>
 
    </header>
@@ -28,9 +28,12 @@
    <div class="ang-view" ng-view></div>
    <masonry class="mason">
       <section class="masonry-brick" ng-repeat="project in main.projects">
-         <img src="assets/imgs/{{project.src}}">
-         <h3>{{project.title}}</h3>
-         <p>{{project.desc}}</p>
+         <a href="/portfolio/skylakes">
+            <img src="assets/imgs/{{project.src}}">
+            <h3>{{project.title}}</h3>
+            <p>{{project.desc}}</p>
+         </a>
+
       </section>
    </masonry>
 </div>

@@ -2,16 +2,16 @@ angular
    .module('SubDig')
    .config(function($routeProvider){
       $routeProvider
-         .when('/portfolio.html', {controller: 'AppCtr', templateUrl: '/partials/grid.html'})
-         .when('/earthwise', {controller: 'AppCtr', templateUrl: 'partials/earthw.html'})
-         .when('/fullpixel', {controller: 'AppCtr', templateUrl: 'partials/fullpix.html'})
-         .when('/intelliskin', {controller: 'AppCtr', templateUrl: 'partials/intelli.html'})
-         .when('/juniperfund', {controller: 'AppCtr', templateUrl: 'partials/juniper.html'})
-         .when('/nedc', {controller: 'AppCtr', templateUrl: 'partials/nedc.html'})
-         .when('/oregonbreakers', {controller: 'AppCtr', templateUrl: 'partials/orbr.html'})
-         .when('/skylakes', {controller: 'AppCtr', templateUrl: 'partials/skylakes.html'})
-         .when('/tofurky', {controller: 'AppCtr', templateUrl: 'partials/tofurky.html'})
-         .when('/wafed', {controller: 'AppCtr', templateUrl: 'partials/wafed.html'})
-         .when('/wellpartner', {controller: 'AppCtr', templateUrl: 'partials/wellp.html'})
-         .when('/windingwaters', {controller: 'AppCtr', templateUrl: 'partials/winwat.html'});
+         .when('/portfolio', {controller: 'AppCtr', templateUrl: '/partials/grid.html'})
+         .when('/portfolio/earthwise', {controller: 'AppCtr', templateUrl: 'partials/earthw.html'})
+         .when('/portfolio/fullpixel', {controller: 'AppCtr', templateUrl: 'partials/fullpix.html'})
+         .when('/portfolio/intelliskin', {controller: 'AppCtr', templateUrl: 'partials/intelli.html'})
+         .when('/portfolio/juniperfund', {controller: 'AppCtr', templateUrl: 'partials/juniper.html'})
+         .when('/portfolio/nedc', {controller: 'AppCtr', templateUrl: 'partials/nedc.html'})
+         .when('/portfolio/oregonbreakers', {controller: 'AppCtr', templateUrl: 'partials/orbr.html'})
+         .when('/portfolio/skylakes', {controller: 'AppCtr', templateUrl: 'partials/skylakes.html'})
+         .when('/portfolio/tofurky', {controller: 'AppCtr', templateUrl: 'partials/tofurky.html'})
+         .when('/portfolio/wafed', {controller: 'AppCtr', templateUrl: 'partials/wafed.html'})
+         .when('/portfolio/wellpartner', {controller: 'AppCtr', templateUrl: 'partials/wellp.html'})
+         .when('/portfolio/windingwaters', {controller: 'AppCtr', templateUrl: 'partials/winwat.html'});
    });
