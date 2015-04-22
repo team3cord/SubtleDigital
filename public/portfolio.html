@@ -19,14 +19,12 @@
 
 <!-- Add your site or application content here -->
    <header>
-      <nav>
+      <nav class="port-nav">
          <a class="logo" href="/">Subtle Digital</a>
-         <a class="port" href="/portfolio.html">Portfolio</a>
       </nav>
 
    </header>
 <div ng-controller="AppCtrl as main" class="main-grid">
-   <h1>{{ main.testing }}</h1>
    <masonry class="mason">
       <section class="masonry-brick" ng-repeat="project in main.projects">
          <img src="assets/imgs/{{project.src}}">

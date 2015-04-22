@@ -82,13 +82,23 @@ nav {
   float: left;
   z-index: 1; }
 
+.port-nav {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-top: 25px;
+  background: #6b92b9;
+  text-align: center; }
+
 .main-grid {
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  background: #000; }
   .main-grid h1 {
     font-size: 23px;
-    color: #FFFFFF;
+    color: #000000;
     text-align: center; }
   .main-grid .mason {
     display: block;
