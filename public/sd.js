@@ -94,7 +94,7 @@ window.onload = function(){
       macBook       = jQuery('.mac'),
       subtle      = jQuery('#subtle'),
       portfolio     = jQuery('.port');
-   macBook.width(loadWinWidth).height(loadWinHeight);
+   macBook.width(loadWinWidth).height(loadWinHeight -7);
    subtle.hover(
       function(){
          portfolio.fadeIn('slow');
@@ -106,7 +106,8 @@ window.onload = function(){
    jQuery(window).resize(function(){
       var winWidth  = jQuery(window).width(),
          winHeight = jQuery(window).height();
-      macBook.width(winWidth).height(winHeight);
+      macBook.width(winWidth).height(winHeight - 7);
+
       //animation loop
       background.addEventListener('load', function(){
          setInterval(draw, 33);
