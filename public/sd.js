@@ -89,7 +89,30 @@ window.onload = function(){
    background.addEventListener('load', function(){
       setInterval(draw, 33);
    }, false);
-}
+   var loadWinWidth  = jQuery(window).width(),
+      loadWinHeight = jQuery(window).height(),
+      macBook       = jQuery('.mac'),
+      subtle      = jQuery('#subtle'),
+      portfolio     = jQuery('.port');
+   macBook.width(loadWinWidth).height(loadWinHeight);
+   subtle.hover(
+      function(){
+         portfolio.fadeIn('slow');
+      },
+      function(){
+         portfolio.fadeOut('slow');
+      }
+   );
+   jQuery(window).resize(function(){
+      var winWidth  = jQuery(window).width(),
+         winHeight = jQuery(window).height();
+      macBook.width(winWidth).height(winHeight);
+      //animation loop
+      background.addEventListener('load', function(){
+         setInterval(draw, 33);
+      },false);
+   });
+};
 
 
 
