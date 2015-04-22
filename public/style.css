@@ -40,7 +40,7 @@ canvas {
 
 .ontop {
   position: absolute;
-  top: 0;
+  top: 7px;
   width: 100%;
   text-align: center; }
   .ontop h1 {
@@ -63,10 +63,13 @@ nav {
   nav .dig {
     font-family: 'hyperdigitalregular'; }
   nav a.port {
-    display: block;
-    float: right;
-    padding-top: 20px;
-    font-size: 34px; }
+    color: #FFFFFF;
+    font-size: 70px;
+    font-family: 'hyperdigital_outlineregular'; }
+  nav i.fa-table {
+    margin-right: 15px; }
+  nav a.port:hover {
+    color: #000000; }
 
 .mac {
   display: block;

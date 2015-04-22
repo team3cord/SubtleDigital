@@ -35,7 +35,7 @@ window.onload = function(){
       for(var i = 0; i < mp; i++)
       {
          var p = particles[i];
-         ctx.drawImage(background, p.x , p.y, 56, 31);
+         ctx.drawImage(background, p.x , p.y, 44, 34);
          //ctx.moveTo(p.x, p.y);
          ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
       }
@@ -86,7 +86,9 @@ window.onload = function(){
    }
 
    //animation loop
-   setInterval(draw, 33);
+   background.addEventListener('load', function(){
+      setInterval(draw, 33);
+   }, false);
 }
 
 

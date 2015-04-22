@@ -62,7 +62,7 @@ canvas {
 }
 .ontop {
   position: absolute;
-  top: 0;
+  top: 7px;
   width: 100%;
   text-align: center;
   h1 {
@@ -89,10 +89,15 @@ nav {
     font-family: 'hyperdigitalregular';
   }
   a.port {
-    display: block;
-    float: right;
-    padding-top: 20px;
-    font-size: 34px;
+    color: #FFFFFF;
+    font-size: 70px;
+    font-family: 'hyperdigital_outlineregular';
+  }
+  i.fa-table {
+    margin-right: 15px;
+  }
+  a.port:hover {
+    color: #000000;
   }
 }
 .mac {
