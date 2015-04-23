@@ -14,6 +14,15 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
+<div ng-controller="NavCtrl as nav">
+   <header>
+      {{nav.menu}}
+      <nav class="port-nav">
+         <a class="logo" href="/#/">Subtle <span class="dig">Digital</span></a>
+      </nav>
+
+   </header>
+</div>
 
 <!-- Add your site or application content here -->
 <div ng-view></div>

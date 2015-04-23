@@ -6,7 +6,7 @@ angular
    ]);
 angular
    .module('SubDig')
-   .controller('AppCtrl', ['$scope', function(){
+   .controller('AppCtrl', [function(){
       var vm = this;
       vm.projects = [
             {
@@ -73,6 +73,12 @@ angular
 }]);
 
 
+angular
+   .module('SubDig')
+   .controller('NavCtrl', ['$location', function($location){
+      var vm = this;
+      vm.menu = $location.path();
+   }]);
 angular
    .module('SubDig')
    .controller('ProjectCtl', ['$scope', function(){
