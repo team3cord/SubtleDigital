@@ -7,7 +7,7 @@
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="/style.css">
    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    <!-- bower:js -->
    <!-- endbower -->
@@ -24,12 +24,14 @@
       </nav>
 
    </header>
+<div ng-view>
+
+</div>
 <div ng-controller="AppCtrl as main" class="main-grid">
-   <div class="ang-view" ng-view></div>
    <masonry class="mason">
       <section class="masonry-brick" ng-repeat="project in main.projects">
-         <a href="/portfolio/skylakes">
-            <img src="assets/imgs/{{project.src}}">
+         <a href="/#/test">
+            <img ng-src="/assets/imgs/{{project.src}}">
             <h3>{{project.title}}</h3>
             <p>{{project.desc}}</p>
          </a>
@@ -38,22 +40,23 @@
    </masonry>
 </div>
 
-<script src="js/lib/jquery/dist/jquery.js"></script>
-<script src="js/lib/get-style-property/get-style-property.js"></script>
-<script src="js/lib/get-size/get-size.js"></script>
-<script src="js/lib/eventEmitter/EventEmitter.js"></script>
-<script src="js/lib/eventie/eventie.js"></script>
-<script src="js/lib/doc-ready/doc-ready.js"></script>
-<script src="js/lib/matches-selector/matches-selector.js"></script>
-<script src="js/lib/outlayer/item.js"></script>
-<script src="js/lib/outlayer/outlayer.js"></script>
+<script src="/js/lib/jquery/dist/jquery.js"></script>
+<script src="/js/lib/get-style-property/get-style-property.js"></script>
+<script src="/js/lib/get-size/get-size.js"></script>
+<script src="/js/lib/eventEmitter/EventEmitter.js"></script>
+<script src="/js/lib/eventie/eventie.js"></script>
+<script src="/js/lib/doc-ready/doc-ready.js"></script>
+<script src="/js/lib/matches-selector/matches-selector.js"></script>
+<script src="/js/lib/outlayer/item.js"></script>
+<script src="/js/lib/outlayer/outlayer.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
-<script src="js/lib/imagesloaded/imagesloaded.js"></script>
-<script src="js/lib/angular/angular.js"></script>
-<script src="js/lib/angular-resource/angular-resource.js"></script>
-<script src="js/lib/angular-masonry/angular-masonry.js"></script>
-<script src="js/lib/angular-route/angular-route.js"></script>
-<script src="app.js"></script>
+<script src="/js/lib/imagesloaded/imagesloaded.js"></script>
+<script src="/js/lib/angular/angular.js"></script>
+<script src="/js/lib/angular-resource/angular-resource.js"></script>
+<script src="/js/lib/angular-masonry/angular-masonry.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+
+<script src="/app.js"></script>
 
 </body>
 </html>

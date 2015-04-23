@@ -2,7 +2,7 @@ var gulp           = require('gulp'),
    concat         = require('gulp-concat'),
    uglify         = require('gulp-uglify'),
    ngAnnotate     = require('gulp-ng-annotate'),
-// nodemon        = require('gulp-nodemon'),
+   nodemon        = require('gulp-nodemon'),
    sass           = require('gulp-sass'),
    notify         = require('gulp-notify'),
    bower          = require('gulp-bower'),
@@ -41,11 +41,18 @@ gulp.task('css', function(){
       .pipe(gulp.dest('public'))
       .pipe(livereload());
 });
+gulp.task('dev:server', function(){
+   nodemon({
+      script: 'server.js',
+      ect:    'js',
+      ignore: ['ng*', 'gulp*','assets*']
+   });
+});
 gulp.task('watch:css',['css'], function(){
    livereload.listen();
    gulp.watch(config.sassPath,['css']);
 });
 
-gulp.task('default',['watch:js', 'watch:css'],  function(){
+gulp.task('default',['watch:js', 'watch:css', 'dev:server'],  function(){
 });
 
