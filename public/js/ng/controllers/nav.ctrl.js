@@ -1,6 +1,6 @@
 angular
    .module('SubDig')
-   .controller('NavCtrl', ['$location', function($location){
+   .controller('NavCtrl',  function( $location){
       var vm = this;
-      vm.menu = $location.path();
-   }]);
+      vm.menu = $location;
+   });
