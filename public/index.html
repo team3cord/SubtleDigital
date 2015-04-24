@@ -14,7 +14,16 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<div ng-controller="NavCtrl as nav">
+<div class="ontop">
+   <header>
+      <nav id="subtle">
+         <a class="logo" href="/#/">Subtle <span class="dig">Digital</span></a>
+         <a class="port" href="/#/portfolio"><i class="fa fa-table"></i>Portfolio</a>
+      </nav>
+   </header>
+   <img  class="mac" src="assets/imgs/bg-laptop-overlay.png">
+</div>
+<!-- <div ng-controller="NavCtrl as nav">
    <header>
       {{nav.menu}}
       <nav class="port-nav">
@@ -22,7 +31,7 @@
       </nav>
 
    </header>
-</div>
+</div> -->
 
 <!-- Add your site or application content here -->
 <div ng-view></div>
