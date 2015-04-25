@@ -1,3 +1,5 @@
+<img  class="mac" src="assets/imgs/bg-laptop-overlay.png">
+
 <canvas id="snow">
 </canvas>
 
@@ -9,8 +11,8 @@
    //snow dimensions
    var W = window.innerWidth - (window.innerWidth * .15);
    var H = window.innerHeight - (window.innerHeight * .10);
-   snow.width = W;
-   snow.height = H;
+   //snow.width = W;
+   //snow.height = H;
 
    //snowflake particles
    var mp = 15; //max particles
@@ -97,7 +99,7 @@
       macBook       = jQuery('.mac'),
       subtle      = jQuery('#subtle'),
       portfolio     = jQuery('.port');
-   macBook.width(loadWinWidth).height(loadWinHeight -7);
+   macBook.width(1400).height(770);
    subtle.hover(
       function(){
          portfolio.fadeIn('slow');
@@ -109,7 +111,7 @@
    jQuery(window).resize(function(){
       var winWidth  = jQuery(window).width(),
          winHeight = jQuery(window).height();
-      macBook.width(winWidth).height(winHeight - 7);
+      macBook.width(1400).height(770);
 
       //animation loop
       background.addEventListener('load', function(){

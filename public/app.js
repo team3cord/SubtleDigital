@@ -78,6 +78,7 @@ angular
    .controller('NavCtrl',  ["$location", function( $location){
       var vm = this;
       vm.menu = $location;
+      console.log(vm.menu.path());
    }]);
 angular
    .module('SubDig')

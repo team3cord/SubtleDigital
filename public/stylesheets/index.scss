@@ -55,6 +55,8 @@ body {
 }
 canvas {
   display: block;
+  width: 1185px;
+  height: 700px;
   margin-top: 3%;
   margin-left: 7.6%;
   background-color: #6b92b9;
@@ -68,11 +70,14 @@ canvas {
     font-size: 45px;
   }
 }
-nav {
+nav.overnav {
   position: absolute;
   top: 25%;
   width: 100%;
   z-index: 2;
+  text-align: center;
+}
+nav {
   a {
     text-decoration: none;
     padding: 10px;
@@ -108,7 +113,7 @@ nav {
   }
 }
 .mac {
-  display: block;
-  float: left;
+  position: absolute;
+  top: 7px;
   z-index: 1;
 }
