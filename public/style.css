@@ -33,8 +33,6 @@ body {
 
 canvas {
   display: block;
-  width: 1185px;
-  height: 700px;
   margin-top: 3%;
   margin-left: 7.6%;
   background-color: #6b92b9; }
