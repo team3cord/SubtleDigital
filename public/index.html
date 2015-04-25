@@ -19,7 +19,7 @@
    <header>
       <nav ng-class="{true: 'overnav', false:'topnav'}[nav.menu.path() == '/']" id="subtle">
          <a class="logo" href="/#/">Subtle <span class="dig">Digital</span></a>
-         <a class="port" href="/#/portfolio"><i class="fa fa-table"></i>Portfolio</a>
+         <a  ng-show="nav.menu.path() == '/'" class="port" href="/#/portfolio"><i class="fa fa-table"></i>Portfolio</a>
       </nav>
    </header>
 
