@@ -1,12 +1,108 @@
 
 <div ng-controller="AppCtrl as main" class="main-grid">
-   <masonry class="mason">
-      <section class="masonry-brick" ng-repeat="project in main.projects">
-         <a show-project="" type="{{project.path}}"  href="#">
-            <img ng-src="/assets/imgs/{{project.src}}">
-            <h3>{{project.title}}</h3>
-         </a>
+      <div class="project-display">
+         <div ng-switch on="main.active.tab">
+            <div ng-switch-when="full" >
+               <div ng-include="'partials/fullpix.html'"></div>
+            </div>
+            <div ng-switch-when="tof" >
+               <div ng-include="'partials/tofurky.html'"></div>
+            </div>
+            <div ng-switch-when="is" >
+               <div ng-include="'partials/intelli.html'"></div>
+            </div>
+            <div ng-switch-when="tjf" >
+               <div ng-include="'partials/juniper.html'"></div>
+            </div>
+            <div ng-switch-when="wp" >
+               <div ng-include="'partials/wellp.html'"></div>
+            </div>
+            <div ng-switch-when="wafed" >
+               <div ng-include="'partials/wafed.html'"></div>
+            </div>
+            <div ng-switch-when="slc" >
+               <div ng-include="'partials/skylakes.html'"></div>
+            </div>
+            <div ng-switch-when="nedc" >
+               <div ng-include="'partials/nedc.html'"></div>
+            </div>
+            <div ng-switch-when="orb" >
+               <div ng-include="'partials/orbr.html'"></div>
+            </div>
+            <div ng-switch-when="cns" >
+               <div ng-include="'partials/calnat.html'"></div>
+            </div>
+            <div ng-switch-when="ews" >
+               <div ng-include="'partials/earthw.html'"></div>
+            </div>
+            <div ng-switch-when="wwr" >
+               <div ng-include="'partials/winwat.html'"></div>
+            </div>
+         </div>
 
+         </div>
+   <masonry class="mason">
+      <section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'full'"  >
+            <img ng-src="/assets/imgs/fullpixel.png">
+            <h3>FullPixel</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'tof'"  >
+            <img ng-src="/assets/imgs/tofurky.png">
+            <h3>Tofurky</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'is'"  >
+            <img ng-src="/assets/imgs/intelliskin.png">
+            <h3>Intelliskin</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'tjf'"  >
+            <img ng-src="/assets/imgs/juniperfund.png">
+            <h3>The Juniper Fund</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'wp'"  >
+            <img ng-src="/assets/imgs/wellpartner.png">
+            <h3>Wellpartner</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'wafed'"  >
+            <img ng-src="/assets/imgs/wafed.png">
+            <h3>Washington Federal</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'slc'"  >
+            <img ng-src="/assets/imgs/skylakesc.png">
+            <h3>Sky Lakes Medical Center</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'nedc'"  >
+            <img ng-src="/assets/imgs/nedc.png">
+            <h3>New England Design & Construction</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'orb'"  >
+            <img ng-src="/assets/imgs/orbreakers.png">
+            <h3>Oregon Breakers</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'cns'"  >
+            <img ng-src="/assets/imgs/svelte.png">
+            <h3>CalNaturale Svelte</h3>
+         </a>
+      </section><section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'ews'"  >
+            <img ng-src="/assets/imgs/earthwise.png">
+            <h3>EarthWise Salvage</h3>
+         </a>
+      </section>
+      <section class="masonry-brick" >
+         <a href="" ng-click="main.active.tab = 'wwr'"  >
+            <img ng-src="/assets/imgs/windingwaters.png">
+            <h3>Winding Waters Raftine</h3>
+         </a>
       </section>
    </masonry>
 </div>

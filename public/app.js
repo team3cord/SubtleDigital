@@ -82,7 +82,7 @@ angular
    }]);
 angular
    .module('SubDig')
-   .controller('ProjectCtl', ['$scope', function(){
+   .controller('ProjectDir', ['$scope', function(){
       var vm = this;
       vm.test ='Work Please.';
    }]);
@@ -106,10 +106,15 @@ angular
          .when('/windingwatersrafting', {controller: 'AppCtrl', templateUrl: '/partials/winwat.html'})
    }]);
 
-angular
-   .directive('showProject', function(){
-      
-   });
+//angular
+//   .directive('showProject', function(){
+ //     return {
+   //      restrict: 'A',
+     //    templateUrl : function(elem, attr){
+       //     return 'partials/'+attr.type+'.html';
+ //        }
+  //    }
+  // });
 
 
 angular

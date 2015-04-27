@@ -119,3 +119,9 @@ nav.topnav {
       font-size: 23px;
       text-align: center;
       color: #FFFFFF; }
+
+.sd-project {
+  display: block;
+  float: left;
+  width: 100%;
+  background: #ff00ff; }
