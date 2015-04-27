@@ -106,6 +106,10 @@ angular
          .when('/windingwatersrafting', {controller: 'AppCtrl', templateUrl: '/partials/winwat.html'})
    }]);
 
+angular
+   .directive('showProject', function(){
+      
+   });
 
 
 angular

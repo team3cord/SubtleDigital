@@ -1,6 +1,6 @@
 angular
    .module('SubDig')
-   .controller('ProjectCtl', ['$scope', function(){
+   .controller('ProjectDir', ['$scope', function(){
       var vm = this;
       vm.test ='Work Please.';
    }]);

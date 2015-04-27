@@ -2,7 +2,7 @@
 <div ng-controller="AppCtrl as main" class="main-grid">
    <masonry class="mason">
       <section class="masonry-brick" ng-repeat="project in main.projects">
-         <a href="/#/{{project.path}}">
+         <a show-project="" type="{{project.path}}"  href="#">
             <img ng-src="/assets/imgs/{{project.src}}">
             <h3>{{project.title}}</h3>
          </a>
