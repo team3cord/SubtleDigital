@@ -106,19 +106,21 @@ nav.topnav {
     display: block;
     float: left;
     width: 100%; }
-  .main-grid section {
-    width: 32%;
-    margin: .65%; }
-    .main-grid section img {
-      display: block;
-      float: left;
-      width: 100%;
-      margin-bottom: 20px; }
-    .main-grid section h3 {
-      margin-top: 20px;
-      font-size: 23px;
-      text-align: center;
-      color: #FFFFFF; }
+  .main-grid section img {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px; }
+  .main-grid section h3 {
+    margin-top: 20px;
+    font-size: 23px;
+    text-align: center;
+    color: #FFFFFF; }
+
+.masonbrick {
+  display: block;
+  float: left;
+  width: 33%; }
 
 .sd-project {
   display: block;

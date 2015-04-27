@@ -1,9 +1,11 @@
 //angular
-//   .directive('showProject', function(){
+ //  .directive('showProject', function(){
  //     return {
-   //      restrict: 'A',
-     //    templateUrl : function(elem, attr){
-       //     return 'partials/'+attr.type+'.html';
+ //        link: function($scope, element, attrs){
+ //           var msnry = new Masonry ( element, {
+ //              itemSelector: '.masonry-brick'
+ //           }
+//
  //        }
-  //    }
-  // });
+ //     }
+ //  });

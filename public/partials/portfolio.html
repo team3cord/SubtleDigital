@@ -44,68 +44,78 @@
          </div>
 
          </div>
-   <masonry class="mason">
-      <section class="masonry-brick" >
+   <div id="container" class="mason">
+      <section class="masonbrick" >
          <a href="" ng-click="main.active = 'full'"  >
             <img ng-src="/assets/imgs/fullpixel.png">
             <h3>FullPixel</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section>
+      <section class="masonbrick" >
          <a href="" ng-click="main.active = 'tof'"  >
             <img ng-src="/assets/imgs/tofurky.png">
             <h3>Tofurky</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'is'"  >
             <img ng-src="/assets/imgs/intelliskin.png">
             <h3>Intelliskin</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'tjf'"  >
             <img ng-src="/assets/imgs/juniperfund.png">
             <h3>The Juniper Fund</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'wp'"  >
             <img ng-src="/assets/imgs/wellpartner.png">
             <h3>Wellpartner</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'wafed'"  >
             <img ng-src="/assets/imgs/wafed.png">
             <h3>Washington Federal</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'slc'"  >
             <img ng-src="/assets/imgs/skylakesc.png">
             <h3>Sky Lakes Medical Center</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'nedc'"  >
             <img ng-src="/assets/imgs/nedc.png">
             <h3>New England Design & Construction</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'orb'"  >
             <img ng-src="/assets/imgs/orbreakers.png">
             <h3>Oregon Breakers</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'cns'"  >
             <img ng-src="/assets/imgs/svelte.png">
             <h3>CalNaturale Svelte</h3>
          </a>
-      </section><section class="masonry-brick" >
+      </section><section class="masonbrick" >
          <a href="" ng-click="main.active = 'ews'"  >
             <img ng-src="/assets/imgs/earthwise.png">
             <h3>EarthWise Salvage</h3>
          </a>
       </section>
-      <section class="masonry-brick" >
+      <section class="masonbrick" >
          <a href="" ng-click="main.active = 'wwr'"  >
             <img ng-src="/assets/imgs/windingwaters.png">
             <h3>Winding Waters Raftine</h3>
          </a>
       </section>
-   </masonry>
+   </div>
 </div>
+<script>
+   var container = document.querySelector('#container'),
+       msnry;
+       imagesLoaded(container,function(){
+          msnry = new Masonry(container, {
+             itemSelector: '.masonbrick'
+          })
+       });
+</script>

@@ -23,8 +23,6 @@ nav.topnav {
     width: 100%;
   }
   section {
-    width: 32%;
-    margin: .65%;
     img {
       display: block;
       float: left;
@@ -39,6 +37,11 @@ nav.topnav {
     }
   }
 
+}
+.masonbrick {
+  display: block;
+  float: left;
+  width: 33%;
 }
 .sd-project {
   display: block;

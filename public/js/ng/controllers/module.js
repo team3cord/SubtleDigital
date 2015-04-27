@@ -1,6 +1,6 @@
 angular
    .module('SubDig', [
       'ngRoute',
-      'ngResource',
-      'wu.masonry'
+      'ngResource'
+      //'wu.masonry'
    ]);

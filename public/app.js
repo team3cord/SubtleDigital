@@ -1,8 +1,8 @@
 angular
    .module('SubDig', [
       'ngRoute',
-      'ngResource',
-      'wu.masonry'
+      'ngResource'
+      //'wu.masonry'
    ]);
 angular
    .module('SubDig')
@@ -46,14 +46,16 @@ angular
    }]);
 
 //angular
-//   .directive('showProject', function(){
+ //  .directive('showProject', function(){
  //     return {
-   //      restrict: 'A',
-     //    templateUrl : function(elem, attr){
-       //     return 'partials/'+attr.type+'.html';
+ //        link: function($scope, element, attrs){
+ //           var msnry = new Masonry ( element, {
+ //              itemSelector: '.masonry-brick'
+ //           }
+//
  //        }
-  //    }
-  // });
+ //     }
+ //  });
 
 
 angular
