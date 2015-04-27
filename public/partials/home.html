@@ -28,8 +28,11 @@
    }
    console.log(particles);
 
-   var background = new Image();
-   background.src = 'assets/icons/html5-org.svg';
+   var background = new Image(),
+       iconArray = ['html5-org.svg','html5-blk.svg', 'css3.svg','js.svg' ]
+       currentIcon = iconArray[Math.floor(Math.random() * iconArray.length)]  ;
+
+   background.src = 'assets/icons/' + currentIcon;
 
    //Lets draw the flakes
    function draw()
