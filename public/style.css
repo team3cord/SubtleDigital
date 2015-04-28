@@ -116,11 +116,18 @@ nav.topnav {
     font-size: 23px;
     text-align: center;
     color: #FFFFFF; }
+  .main-grid section a {
+    text-decoration: none; }
 
 .masonbrick {
   display: block;
   float: left;
-  width: 33%; }
+  width: 32%;
+  margin: .65%; }
+
+.masonbrick.hero {
+  width: 64%;
+  margin: .7%; }
 
 .sd-project {
   display: block;
