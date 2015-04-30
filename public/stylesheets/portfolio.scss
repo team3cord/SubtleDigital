@@ -7,6 +7,16 @@ nav.topnav {
   background: #6b92b9;
   text-align: center;
 }
+h3 {
+  font-family: 'Roboto', serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+p {
+  font-family: 'Roboto', serif;
+  font-size: 25px;
+  font-weight: normal;
+}
 .main-grid {
   display: block;
   float: left;
@@ -41,6 +51,34 @@ nav.topnav {
   }
 
 }
+.project-display {
+  display: block;
+  float: left;
+  width: 100%;
+  background: #FFFFFF;
+  .sd-project {
+    display: block;
+    float: left;
+    width: 98%;
+    background: #FFFFFF;
+    img {
+      float: left;
+      width: 75%;
+    }
+    .project-panel {
+      float: left;
+      width: 21%;
+      padding: 80px 25px 25px 25px;
+
+    }
+  }
+  i {
+    color: #00FF00;
+    width: 2%;
+    height: 2%;
+    font-size: 40px;
+  }
+}
 .masonbrick {
   display: block;
   float: left;
@@ -50,10 +88,4 @@ nav.topnav {
 .masonbrick.hero {
   width: 64%;
   margin: .70%;
-}
-.sd-project {
-  display: block;
-  float: left;
-  width: 100%;
-  background: #ff00ff;
 }
