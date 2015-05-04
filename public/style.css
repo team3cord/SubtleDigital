@@ -87,6 +87,11 @@ nav a.port:hover {
   top: 7px;
   z-index: 1; }
 
+@media only screen and (max-width: 1046px) {
+  body {
+    display: none; } }
+
+
 nav.topnav {
   display: block;
   float: left;
