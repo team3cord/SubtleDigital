@@ -110,6 +110,7 @@ nav {
     color: #000000;
   }
 }
+.touch-port{display:none;}
 .mac {
   position: absolute;
   left: 0;
@@ -117,4 +118,7 @@ nav {
   margin: 0 auto;
   top: 7px;
   z-index: 1;
+}
+img.phone , img.tablet {
+  display:none;
 }

@@ -1,3 +1,5 @@
+<img class="phone" src="assets/imgs/phone.png">
+<img class="tablet" src="assets/imgs/tablet.png">
 <img  class="mac" src="assets/imgs/bg-laptop-overlay.png">
 
 <canvas id="snow">
@@ -11,7 +13,7 @@
    //snow dimensions
    var W = window.innerWidth - (window.innerWidth * .15);
    var H = window.innerHeight - (window.innerHeight * .10);
-   snow.width = 1185;
+   snow.width = 1159;
    snow.height = 700;
 
    //snowflake particles
@@ -102,7 +104,7 @@
       macBook       = jQuery('.mac'),
       subtle      = jQuery('#subtle'),
       portfolio     = jQuery('.port');
-   macBook.width(1400).height(770);
+   macBook.width(1370).height(770);
    subtle.hover(
       function(){
          portfolio.fadeIn('slow');
@@ -111,14 +113,4 @@
          portfolio.fadeOut('slow');
       }
    );
-   jQuery(window).resize(function(){
-      var winWidth  = jQuery(window).width(),
-         winHeight = jQuery(window).height();
-      macBook.width(1400).height(770);
-
-      //animation loop
-      background.addEventListener('load', function(){
-         setInterval(draw, 33);
-      },false);
-   });
 </script>
