@@ -25,6 +25,7 @@
     position: fixed;
     bottom:0;
   }
+  .wrp{display:none;}
   img.phone , img.mac {
     display:none;
   }
@@ -43,7 +44,7 @@
   }
 }
 @media only screen and (max-width:550px){
-  body{background-color: #6b92b9;}
+  .wrp {background-color: #6b92b9;}
   img.phone {
     display: block;
     width: 400px;

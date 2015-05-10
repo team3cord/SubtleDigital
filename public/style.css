@@ -121,6 +121,8 @@ img.phone, img.tablet {
     margin: 0 auto;
     position: fixed;
     bottom: 0; }
+  .wrp {
+    display: none; }
   img.phone, img.mac {
     display: none; }
   nav.overnav {
@@ -136,7 +138,7 @@ img.phone, img.tablet {
     font-size: 47px; } }
 
 @media only screen and (max-width: 550px) {
-  body {
+  .wrp {
     background-color: #6b92b9; }
   img.phone {
     display: block;
