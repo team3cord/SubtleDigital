@@ -5,7 +5,14 @@
     height: 100%!important;
    }
   .touch-port {display:none;}
-  body{background-color: #6b92b9;}
+  .wrp {
+    display:  block;
+    float: left;
+    width: 1100px;
+    height: 666px; 
+    margin: 25px 0 0 110px;
+    background-color: #6b92b9;
+  }
 }
 @media only screen and (max-width:1200px){
   #snow {display:none;}
