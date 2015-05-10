@@ -44,7 +44,14 @@
   }
 }
 @media only screen and (max-width:550px){
-  .wrp {background-color: #6b92b9;}
+  .wrp {
+    display: block;
+    width: 450px;
+    height: 900px;
+    margin: 5px 0 5px 10%;
+    background-color: #6b92b9;
+     
+  }
   img.phone {
     display: block;
     width: 400px;
