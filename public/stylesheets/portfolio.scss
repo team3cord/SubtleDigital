@@ -73,6 +73,8 @@ p {
     }
   }
   i {
+    display: block;
+    float: right;
     color: #00FF00;
     width: 2%;
     height: 2%;
@@ -89,3 +91,25 @@ p {
   width: 64%;
   margin: .70%;
 }
+.pop {
+  display: block;
+  float:left;
+  width: 100%;
+  height: inherit;
+}
+.pop.ng-enter,
+.pop.ng-leave {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.pop.ng-enter {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.pop.ng-enter-active,
+.pop.ng-leave,
+.pop.ng-leave-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.pop.ng-leave-active {}

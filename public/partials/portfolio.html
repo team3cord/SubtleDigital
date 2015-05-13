@@ -2,27 +2,27 @@
 <div ng-controller="AppCtrl as main" class="main-grid">
       <div id="here" class="project-display">
          <div ng-switch on="main.active">
-
+            <i  ng-if="main.active != 'default'" ng-click="main.active ='default' "class="fa fa-times fa-3"></i>
             <div ng-switch-when="full" >
-               <div ng-include="'partials/fullpix.html'"></div>
+               <div ng-include="'partials/fullpix.html'" class="pop"></div>
             </div>
             <div ng-switch-when="tof" >
-               <div ng-include="'partials/tofurky.html'"></div>
+               <div ng-include="'partials/tofurky.html'" class="pop"></div>
             </div>
             <div ng-switch-when="is" >
-               <div ng-include="'partials/intelli.html'"></div>
+               <div ng-include="'partials/intelli.html'" class="pop"></div>
             </div>
             <div ng-switch-when="tjf" >
-               <div ng-include="'partials/juniper.html'"></div>
+               <div ng-include="'partials/juniper.html'" class="pop"></div>
             </div>
             <div ng-switch-when="wp" >
-               <div ng-include="'partials/wellp.html'"></div>
+               <div ng-include="'partials/wellp.html'" class="pop"></div>
             </div>
             <div ng-switch-when="wafed" >
                <div ng-include="'partials/wafed.html'"></div>
             </div>
             <div ng-switch-when="slc" >
-               <div ng-include="'partials/skylakes.html'"></div>
+               <div ng-include="'partials/skylakes.html'" class="pop"></div>
             </div>
             <div ng-switch-when="nedc" >
                <div ng-include="'partials/nedc.html'"></div>
@@ -39,7 +39,7 @@
             <div ng-switch-when="wwr" >
                <div ng-include="'partials/winwat.html'"></div>
             </div>
-            <i  ng-if="main.active != 'default'" ng-click="main.active ='default' "class="fa fa-times fa-3"></i>
+            <button ng-if="main.active != 'default'" ng-click="main.active ='default'  class="btn-mc">Button</button>
          </div>
 
          </div>

@@ -1,9 +1,10 @@
 angular
    .module('SubDig', [
       'ngRoute',
-      'ngResource'
-      //'wu.masonry'
+      'ngResource',
+      'ngAnimate'
    ]);
+
 angular
    .module('SubDig')
    .controller('AppCtrl', ['$location', '$anchorScroll', function($location, $anchorScroll){
