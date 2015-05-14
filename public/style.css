@@ -213,11 +213,19 @@ p {
     background: #FFFFFF; }
     .project-display .sd-project img {
       float: left;
-      width: 75%; }
+      width: 75%;
+      margin-bottom: 50px; }
     .project-display .sd-project .project-panel {
       float: left;
       width: 21%;
       padding: 80px 25px 25px 25px; }
+      .project-display .sd-project .project-panel h1 {
+        font-size: 35px;
+        text-align: center;
+        margin: 0 25px 25px 0; }
+        .project-display .sd-project .project-panel h1 a {
+          color: #00FF00;
+          text-decoration: none; }
   .project-display i {
     display: block;
     float: right;

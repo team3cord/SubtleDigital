@@ -64,12 +64,21 @@ p {
     img {
       float: left;
       width: 75%;
+      margin-bottom: 50px;
     }
     .project-panel {
       float: left;
       width: 21%;
       padding: 80px 25px 25px 25px;
-
+      h1{
+        font-size: 35px;
+        text-align: center;
+        margin: 0 25px 25px 0;
+        a {
+          color:#00FF00;
+          text-decoration: none;
+        }
+      }
     }
   }
   i {
