@@ -81,6 +81,15 @@ angular
          .when('/windingwatersrafting', {controller: 'AppCtrl', templateUrl: '/partials/winwat.html'})
    }]);
 
+
+angular
+   .module('SubDig')
+      .factory('ProjectFct',
+         ["$resource", function($resource){
+            return $resource('/app/data/projects.json');
+   }]);
+
+
 //angular
  //  .directive('showProject', function(){
  //     return {
@@ -92,11 +101,3 @@ angular
  //        }
  //     }
  //  });
-
-
-angular
-   .module('SubDig')
-      .factory('ProjectFct',
-         ["$resource", function($resource){
-            return $resource('/app/data/projects.json');
-   }]);
