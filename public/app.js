@@ -67,6 +67,7 @@ angular
       $routeProvider
          .when('/', {controller: '', templateUrl: '/partials/home.html'})
          .when('/portfolio', {controller: 'AppCtrl', templateUrl: '/partials/portfolio.html'})
+         .when('/sandbox', {controller: 'SandBocCtrl', templateUrl: '/partials/sandbox.html'})
          .when('/earthwise', {controller: 'AppCtrl', templateUrl: '/partials/earthw.html'})
          .when('/fullpixel', {controller: 'AppCtrl', templateUrl: '/partials/fullpix.html'})
          .when('/intelliskin', {controller: 'AppCtrl', templateUrl: '/partials/intelli.html'})
@@ -80,6 +81,13 @@ angular
          .when('/wellpartner', {controller: 'AppCtrl', templateUrl: '/partials/wellp.html'})
          .when('/windingwatersrafting', {controller: 'AppCtrl', templateUrl: '/partials/winwat.html'})
    }]);
+angular
+   .module('SubDig')
+   .controller('SandBoxCtrl', [$scope, function(){
+      console.log('SandBox!!');
+   }]);
+
+
 
 
 angular
@@ -88,16 +96,3 @@ angular
          ["$resource", function($resource){
             return $resource('/app/data/projects.json');
    }]);
-
-
-//angular
- //  .directive('showProject', function(){
- //     return {
- //        link: function($scope, element, attrs){
- //           var msnry = new Masonry ( element, {
- //              itemSelector: '.masonry-brick'
- //           }
-//
- //        }
- //     }
- //  });
