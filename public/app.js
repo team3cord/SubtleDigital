@@ -81,11 +81,11 @@ angular
          .when('/wellpartner', {controller: 'AppCtrl', templateUrl: '/partials/wellp.html'})
          .when('/windingwatersrafting', {controller: 'AppCtrl', templateUrl: '/partials/winwat.html'})
    }]);
-angular
-   .module('SubDig')
-   .controller('SandBoxCtrl', [$scope, function(){
-      console.log('SandBox!!');
-   }]);
+// angular
+  //  .module('SubDig')
+//    .controller('SandBoxCtrl', [$scope, function(){
+//       console.log('SandBox!!');
+//    }]);
 
 
 

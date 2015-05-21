@@ -210,6 +210,7 @@ p {
     display: block;
     float: left;
     width: 98%;
+    padding: 1%;
     background: #FFFFFF; }
     .project-display .sd-project img {
       float: left;
@@ -228,11 +229,32 @@ p {
           text-decoration: none; }
   .project-display i {
     display: block;
-    float: right;
+    float: left;
     color: #00FF00;
     width: 2%;
     height: 2%;
+    margin: 1% 1% 0 97%;
     font-size: 40px; }
+  .project-display button.btn-mc {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #00FF00;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #000000;
+    font-family: 'Roboto', serif;
+    font-size: 19px;
+    padding: 13px 31px;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .project-display button.btn-mc:hover {
+    color: #ffffff; }
+  .project-display button.btn-mc:active {
+    position: relative;
+    top: 1px; }
 
 .masonbrick {
   display: block;
