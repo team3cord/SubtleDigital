@@ -93,6 +93,11 @@ nav a.port:hover {
 img.phone, img.tablet {
   display: none; }
 
+.page-wrap {
+  width: 95%;
+  padding: 25px 2.5%;
+  background: #ff00ff; }
+
 @media only screen and (max-width: 1370px) {
   #snow {
     display: none; }

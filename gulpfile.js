@@ -7,8 +7,6 @@ var gulp           = require('gulp'),
    notify         = require('gulp-notify'),
    bower          = require('gulp-bower'),
    livereload     = require('gulp-livereload');
-// mainBowerFiles = require('main-bower-files'),
-// wiredep        = require('wiredep').streams;
 
 var config = {
    sassPath: 'public/stylesheets/*.scss',
@@ -27,13 +25,24 @@ gulp.task('js', function(){
 gulp.task('watch:js', ['js'], function(){
    gulp.watch(config.jsPath, ['js']);
 });
-// gulp.task('bower', function(){
-//   gulp.src(mainBowerFiles(),{base: config.bowerPath})
-//      .pipe(wiredep({
-//      })
-//.pipe(concat('bower.js'))
-//      .pipe(gulp.dest('public'));
-//});
+ gulp.task('bower', function(){
+   gulp.src([config.bowerPath + '/jquery/dist/jquery.js',
+             config.bowerPath + '/get-style-property/get-style-property.js',
+             config.bowerPath + '/get-size/get-size.js',
+             config.bowerPath + '/eventEmmitter/EventEmmitter.js',
+             config.bowerPath + '/eventie/eventie.js',
+             config.bowerPath + '/doc-ready/doc-ready.js',
+             config.bowerPath + '/matches-selector/matches-selector.js',
+             config.bowerPath + '/outlayer/item.js',
+             config.bowerPath + '/outlayer/outlayer.js',
+             config.bowerPath + '/imagesloaded/imagesloaded.js',
+             config.bowerPath + '/angular/angular.js',
+             config.bowerPath + '/angular-animate/angular-animate.js',
+             config.bowerPath + '/angular-resource/angular-resource.js'
+   ])
+      .pipe(concat('bower.js'))
+      .pipe(gulp.dest('public'));
+});
 gulp.task('css', function(){
    gulp.src(config.sassPath)
       .pipe(sass())
@@ -53,6 +62,6 @@ gulp.task('watch:css',['css'], function(){
    gulp.watch(config.sassPath,['css']);
 });
 
-gulp.task('default',['watch:js', 'watch:css', 'dev:server'],  function(){
+gulp.task('default',['bower','watch:js', 'watch:css', 'dev:server'],  function(){
 });
 
