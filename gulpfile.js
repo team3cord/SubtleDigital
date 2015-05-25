@@ -41,6 +41,7 @@ gulp.task('watch:js', ['js'], function(){
              config.bowerPath + '/angular-resource/angular-resource.js'
    ])
       .pipe(concat('bower.js'))
+      .pipe(uglify())
       .pipe(gulp.dest('public'));
 });
 gulp.task('css', function(){
