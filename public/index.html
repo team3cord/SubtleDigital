@@ -7,6 +7,19 @@
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+   <!-- Kenburnsy styles -->
+   <link rel="stylesheet" href="jquery.kenburnsy.css">
+
+   <!-- JQuery -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+   <!-- Velocity.js -->
+   <script src="http://cdn.jsdelivr.net/jquery.velocity/0.9.0/jquery.velocity.min.js"></script>
+   <script>window.jQuery.velocity || document.write('<script src="../vendor/jquery.velocity.min.js"><\/script>')</script>
+
+   <!-- Kenburnsy.js -->
+   <script src="js/jquery.kenburnsy.js"></script>
+
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700italic,700' rel='stylesheet' type='text/css'>
@@ -23,7 +36,7 @@
 <div class="">
    <header>
       <nav ng-class="{true: 'overnav', false:'topnav'}[nav.menu.path() == '/']" id="subtle">
-         <a class="logo" href="/#/">Subtle <span class="dig">Digital</span></a>
+         <a class="logo" href="/#/"> <span class="dig">Matt</span>Corderio</a>
          <a class="port hov-port"  ng-show="nav.menu.path() == '/'" href="/#/portfolio"><i class="fa fa-table"></i>Portfolio</a>
          <a class="touch-port" ng-show="nav.menu.path() == '/'" href="/#/portfolio"><i class="fa fa-table"></i>Portfolio</a>
       </nav>
