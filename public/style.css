@@ -98,6 +98,21 @@ img.phone, img.tablet {
   padding: 25px 2.5%;
   background: #ff00ff; }
 
+.slideshow {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  height: 45px;
+  width: 65px; }
+
+.fa.fa-picture-o {
+  font-size: 3.5em;
+  color: black; }
+
+.fa.fa-picture-o:hover {
+  color: #0000CD; }
+
 @media only screen and (max-width: 1370px) {
   #snow {
     display: none; }

@@ -2,7 +2,7 @@
     var pluginName = 'kenburnsy',
         defaults = {
           fullscreen: false,
-          duration: 9000,
+          duration: 5000,
           fadeInDuration: 1500,
           height: null
         };
